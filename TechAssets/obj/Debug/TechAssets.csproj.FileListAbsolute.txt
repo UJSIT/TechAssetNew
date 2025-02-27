@@ -1,0 +1,429 @@
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\TechAssets.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\TechAssets.pdb
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Http.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Razor.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Http.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.Razor.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\obj\Debug\TechAssets.csprojResolveAssemblyReference.cache
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\Projects\TechAssets\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\New folder\TechAssets\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\Backup\TechAssets Newapplication 10_15\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\TechAssets.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\TechAssets.pdb
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Http.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Razor.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Http.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.Razor.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\obj\Debug\TechAssets.csprojResolveAssemblyReference.cache
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\prasadisadt\Documents\Visual Studio 2012\TechAssets Newapplication 10_15\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_24\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAssets Newapplication 10_26\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\Newapplication 10_30\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\2024_11_28\Newapplication 11_28\TechAssets\obj\Debug\TechAssets.pdb
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\TechAssets.dll.config
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\TechAssets.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\TechAssets.pdb
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\Newtonsoft.Json.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Net.Http.Formatting.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Helpers.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Http.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Http.WebHost.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Mvc.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Razor.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.Deployment.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.Razor.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\Newtonsoft.Json.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Net.Http.Formatting.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Helpers.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Http.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Http.WebHost.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Mvc.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.Razor.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.Deployment.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.Razor.xml
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.dll
+\\csd\TechAssetBackup\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAssetNewApp\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAsse\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\2025_02_05\TechAsse\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\Backup\2025_02_16\TechAsseNewApp\TechAssets\obj\Debug\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\TechAssets.dll.config
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\TechAssets.pdb
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\obj\Debug\TechAssets.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\obj\Debug\TechAssets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\obj\Debug\TechAssets.csproj.Up2Date
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\obj\Debug\TechAssets.dll
+C:\Users\Administrator\Desktop\TechAsset Version 1.0\NewApp\TechAsseNewApp Version 0.1\TechAssets\obj\Debug\TechAssets.pdb

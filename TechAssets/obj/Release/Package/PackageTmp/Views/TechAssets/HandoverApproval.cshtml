@@ -1,0 +1,317 @@
+﻿@{
+    ViewBag.Title = "Devices";
+}
+
+@model TechAssets.Models.DevicesViewModel
+
+
+
+<body>
+
+    <input type="text" id="empname" name="empname" value="@Model.TechUser.get_emp_name" class="d-none" )" />
+
+
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+
+                <div class="col-sm-6">
+                    <img class="" src="@Url.Content("~/Content/Mylayout/dist/img/TechAssets.png")" alt="Logo" width="20%" />
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/TechAssets/Index">Home</a></li>
+                        <li class="breadcrumb-item active">Awaiting Request Repair Approval</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    @*Request *@
+
+    <section class="content">
+
+        <div class="container-fluid">
+
+            <div class="card card-danger card-outline">
+
+                @if (ViewBag.SuccessMessage != null)
+                {
+                    <script>
+                        $(document).ready(function() {
+                            toastr.success('@ViewBag.SuccessMessage', 'Success');
+                        });
+                    </script>
+                }
+
+
+                <div class="card-body">
+
+                    <div class="col-md-12 d-flex align-items-center justify-content-between">
+
+                        <div class="col-sm-6">
+                            <h4 class="mb-0"><b>Awaiting Permanent Handover Approval</b></h4>
+                        </div>
+
+
+
+                        <div class="text-end">
+                            <i class="fas fa-search-location"></i>   <strong> @Model.TechUser.divisionName</strong>
+
+                        </div>
+                    </div>
+
+
+                    <table id="example1" class="table table-bordered table-striped">
+                        @if (Model.HardwareDevices != null && Model.HardwareDevices.Any())
+                        {
+                            <thead>
+                                <tr>
+                                    <th><center>Item Type</center></th>
+                                    <th>IT No</th>
+                                    <th>INV No</th>
+                                    <th>HandoverRequestDate</th>
+                                    <th>HandoverReason</th>
+                                    <th>DeviceUser</th>
+                                    <th>ContactDetails</th>
+                                    <th>RequestUser</th>
+                                    <th style="width: 15%;"><center>Action</center></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach (var Appdevices in Model.HardwareDevices)
+                                {
+                                    string statusValue = Appdevices.Current_Status;
+                                    string path = "../../Content/Icon/" + Appdevices.Item_Type.ToString().Trim() + ".png";
+
+                                    <tr>
+                                        <td>
+                                            <center>
+                                                <img src="@path" width="25" />&nbsp;
+
+                                                @Appdevices.Item_Type
+                                            </center>
+                                        </td>
+                                        <td>@Appdevices.IT_No</td>
+                                        <td>@Appdevices.INV_No</td>
+                                        <td>@Appdevices.THRequestDate</td>
+                                        <td>@Appdevices.Userfeedback</td>
+                                        <td>@Appdevices.DeviceUser</td>
+                                        <td>@Appdevices.ContactDetails</td>
+                                        <td>@Appdevices.SysTHReqUser</td>
+
+                                        <td>
+                                            <center>
+                                                <a href="" class="btn btn-warning btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="View" target="_blank">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+
+                                                <a href="#" class="btn btn-success btn-sm approve-btn"
+                                                   data-itno="@Appdevices.IT_No"
+                                                   data-thandoverid="@Appdevices.THandoverid"
+                                                   data-bs-toggle="tooltip"
+                                                   data-bs-placement="top"
+                                                   title="Approve">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </a>
+
+
+                                                <a href="#" class="btn btn-danger btn-sm"
+                                                   data-itno="@Appdevices.IT_No"
+                                                   data-thandoverid="@Appdevices.THandoverid"
+                                                   data-bs-toggle="tooltip"
+                                                   data-bs-placement="top"
+                                                   title="Reject"
+                                                   data-toggle="modal"
+                                                   data-target="#rejectModal">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </a>
+
+
+
+
+
+                                            </center>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        }
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <br />
+    <br />
+
+
+
+    <!-- Reject Modal -->
+    <div class="modal fade" id="rejectModal" tabindex="-1" role="dialog" aria-labelledby="rejectModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-light">
+                    <h5 class="modal-title" id="rejectModalLabel">Handover Reject</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="rejectForm">
+                        <div class="form-group">
+                            <label for="CenterRejectReson">Reason for Reject Permanently Handover <span style="color: red;">*</span></label>
+                            <textarea class="form-control" id="CenterRejectReson" name="CenterRejectReson" rows="3" required></textarea>
+                            <small id="rejectError" class="form-text text-danger" style="display: none;">Reason is Required</small>
+                        </div>
+                        <input type="hidden" id="itNo" name="IT_No" />
+                        <input type="hidden" id="THandoverid" name="THandoverid" />
+                        <input type="hidden" id="empname" name="empname" value="current_user_name" />
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary" style="width: 200px;" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" style="width: 200px;" id="saveReject" onclick="submitRejectForm()">Reject Handover</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Approve Modal -->
+    <script>
+$(document).ready(function () {
+    $('.approve-btn').on('click', function (event) {
+        event.preventDefault();
+
+        var itNo = $(this).data('itno');
+        var thandoverId = $(this).data('thandoverid');
+        var empname = $('#empname').val();
+
+        $.ajax({
+            url: '@Url.Action("ApproveHandover", "TechAssets")',
+            type: 'POST',
+            data: {
+                IT_No: itNo,
+                THandoverid: thandoverId,
+                empname: empname
+            },
+            success: function (response) {
+                Swal.fire({
+                    title: 'Approved',
+                    text: 'The Handover approved successfully!',
+                    icon: 'success'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        location.reload();
+                    }
+                });
+            },
+            error: function (xhr, status, error) {
+                Swal.fire({
+                    title: 'Error!',
+                    text: "An error occurred: " + xhr.responseText,
+                    icon: 'error'
+                });
+            }
+        });
+    });
+});
+    </script>
+
+
+    @*Reject Modal*@
+    <script>
+
+        $(document).ready(function () {
+            $('#rejectModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                var itNo = button.data('itno');
+                var thandoverid = button.data('thandoverid');
+
+                var modal = $(this);
+                modal.find('#itNo').val(itNo);
+                modal.find('#THandoverid').val(thandoverid);
+            });
+        });
+
+
+        function submitRejectForm() {
+            const centerRejectReson = document.getElementById("CenterRejectReson").value.trim();
+            const rejectError = document.getElementById("rejectError");
+
+            if (!centerRejectReson) {
+                rejectError.style.display = "block";
+                return;
+            } else {
+                rejectError.style.display = "none";
+            }
+
+            const data = {
+                IT_No: document.getElementById("itNo").value,
+                THandoverid: document.getElementById("THandoverid").value,
+                empname: document.getElementById("empname").value,
+                CenterRejectReson: centerRejectReson
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/TechAssets/RejectHandover",
+                data: data,
+                success: function (response) {
+                    if (response.success) {
+                        $('#rejectModal').modal('hide');
+                        location.reload();
+                    } else {
+                        alert("Server response error: " + response.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX error:", xhr, status, error);
+                    alert("An error occurred while submitting the form.");
+                }
+            });
+        }
+    </script>
+
+
+
+
+
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body>

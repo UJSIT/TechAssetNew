@@ -1,0 +1,1159 @@
+﻿@{
+    ViewBag.Title = "Devices";
+}
+
+@model TechAssets.Models.DevicesViewModel
+
+<input type="hidden" id="empname" name="empname" value="@Model.TechUser.get_emp_name" />
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+
+            <div class="col-sm-6">
+                <img class="" src="@Url.Content("~/Content/Mylayout/dist/img/TechAssets.png")" alt="Logo" width="20%" />
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/TechAssets/Index">Home</a></li>
+                    <li class="breadcrumb-item active">Find Devices </li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</section>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+@*Table Start *@
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="card card-danger card-outline">
+
+            @if (ViewBag.SuccessMessage != null)
+            {
+                <script>
+                        $(document).ready(function() {
+                            toastr.success('@ViewBag.SuccessMessage', 'Success');
+                        });
+                </script>
+            }
+
+
+            <div class="card-body">
+
+                <div class="col-md-12 d-flex align-items-center justify-content-between">
+                    <div class="btn-group me-2" role="group">
+
+                        <p class="mb-0">
+                            <i class="fas fa-filter"></i>
+                            <strong>
+                                Filter By  &nbsp; &nbsp;
+                            </strong>
+                        </p>
+
+                        <a href="/TechAssets/Devices?status=1" class="btn btn-primary btn-sm @(ViewBag.CurrentStatus == "1" ? "active" : "")">In Current Location</a>&nbsp;&nbsp;
+
+                        <a href="/TechAssets/Devices?status=All" class="btn btn-primary btn-sm @(ViewBag.CurrentStatus == "All" ? "active" : "")">Search All</a>&nbsp;&nbsp;
+
+                        <a href="/TechAssets/Devices?status=30,43" class="btn btn-primary btn-sm @(ViewBag.CurrentStatus == "30,43" ? "active" : "")">
+                            <i class="fas fa-spinner"></i>&nbsp; Pending Approval
+                        </a>&nbsp;&nbsp;
+                        <a href="/TechAssets/Devices?status=31,44" class="btn btn-primary btn-sm @(ViewBag.CurrentStatus == "31,44" ? "active" : "")">
+                            <i class="fas fa-truck-loading"></i>&nbsp; Send to IT Division
+                        </a>&nbsp;&nbsp;
+
+                        @*NewChanges*@
+                        <a href="/TechAssets/Devices?status=56,18" class="btn btn-primary btn-sm @(ViewBag.CurrentStatus == "56,18" ? "active" : "")">
+                            <i class="fas fa-check-double"></i>&nbsp;  Received Confirm
+                        </a>&nbsp;&nbsp;
+                        @*NewChangesEnd*@
+
+
+
+                    </div>
+
+                    <div class="text-end">
+                        <i class="fas fa-search-location"></i>   <strong> @Model.TechUser.divisionName</strong>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <table id="example1" class="table table-bordered table-striped">
+                    @if (Model.HardwareDevices != null && Model.HardwareDevices.Any())
+                    {
+
+
+                        <thead>
+                            <tr>
+                                <th><center>Item Type</center></th>
+                                <th>IT No</th>
+                                <th>Serial No</th>
+                                <th>INV No</th>
+                                <th>QR</th>
+                                <th>Device User</th>
+                                <th><center>Current_Status</center></th>
+                                <th style="width: 15%;"><center>Action</center></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var device in Model.HardwareDevices)
+                            {
+                                string statusValue = @device.Current_Status;
+                                string HoIDst = @device.HoIDst;
+                                string HoIDth = @device.HoIDth;
+                                string CoID = @device.CoID;
+                                string path = "../../Content/Icon/" + @device.Item_Type.ToString().Trim() + ".png";
+
+                                <tr>
+                                    <td>
+                                        <center>
+                                            <img src="@path" width="25" />&nbsp;
+
+                                            @device.Item_Type
+                                        </center>
+                                    </td>
+                                    <td>@device.IT_No</td>
+                                    <td>@device.Serial_No</td>
+                                    <td>@device.INV_No</td>
+                                    <td>@device.QR</td>
+                                    <td>@device.Authorized_Officer</td>
+                                    <td>
+
+                                        @if (statusValue == "1")
+                                        {
+                                            <center>
+                                                <span class="badge badge-success">
+                                                    @device.Current_Status_Text.Trim()
+                                                </span>
+                                            </center>
+                                        }
+                                        else if (statusValue == "30")
+                                        {
+                                            <center>
+                                                <i class="fas fa-spinner"></i>&nbsp;
+                                                <label>Pending Repair Approval</label>
+                                            </center>
+                                        }
+
+                                        else if (statusValue == "43")
+                                        {
+                                            <center>
+                                                <i class="fas fa-spinner"></i>&nbsp;
+                                                <label>Pending Permenantly Handover Approval</label>
+                                            </center>
+                                        }
+
+                                        else
+                                        {
+                                            <center>
+                                                @device.Current_Status_Text.Trim()
+                                            </center>
+                                        }
+
+
+                                    </td>
+
+                                    <th>
+                                        <center>
+
+                                           
+
+                                            @if (statusValue == "1")
+                                            {
+                                                <div class="btn-group">
+                                                    <button class="btn btn-danger dropdown-toggle btn-sm" type="button" data-toggle="dropdown" aria-expanded="false">
+                                                        Actions
+                                                    </button>
+
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#RepairModal" data-itNO="@device.IT_No"> <center>Request to Repair</center></a>
+                                                        </li>
+                                                        <hr />
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" style="color: red;" data-toggle="modal" data-target="#HandoverModal" data-itNo="@device.IT_No">Permanently Handover</a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            }
+
+                                            @if (statusValue == "31" || statusValue == "44")
+                                            {
+
+                                                <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#SentModal" data-itNo="@device.IT_No" data-status-value="@statusValue " title="Sent to IT">
+                                                    <i class="fas fa-truck-loading"></i>
+                                                </a>
+                                            }
+
+                                            @*NewChanges*@
+
+                                            @*@if (!string.IsNullOrEmpty(HoIDst))
+                                                {
+                                                    <a class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#ConfirmModal" data-itNo="@device.IT_No" data-hooneId="@HoIDst">
+                                                        <i class="fas fa-check-double"></i>
+                                                    </a>
+                                                }*@
+
+
+                                            @if (string.IsNullOrEmpty(CoID) && !string.IsNullOrEmpty(HoIDst))
+                                            {
+                                                <a class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#ConfirmModal" data-itNo="@device.IT_No" data-hooneId="@HoIDst">
+                                                    <i class="fas fa-check-double"></i>
+                                                </a>
+                                            }
+
+                                            @if (string.IsNullOrEmpty(CoID) && !string.IsNullOrEmpty(HoIDth))
+                                            {
+                                                <a class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#ConfirmTModal" data-itNo="@device.IT_No" data-hooneId="@HoIDth">
+                                                    <i class="fas fa-check-double"></i>
+                                                </a>
+                                            }
+
+
+                                            @if (!string.IsNullOrEmpty(CoID) && !string.IsNullOrEmpty(HoIDst))
+                                            {
+                                                <a class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#ConfirmNewModal" data-itNo="@device.IT_No" data-hooneId="@HoIDst" data-cooneId="@CoID">
+                                                    <i class="fas fa-check-double"></i>
+                                                </a>
+                                            }
+
+
+                                            @if (!string.IsNullOrEmpty(CoID) && !string.IsNullOrEmpty(HoIDth))
+                                            {
+                                                <a class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#ConfirmReModal" data-itNo="@device.IT_No" data-hooneId="@HoIDth" data-cooneId="@CoID">
+                                                    <i class="fas fa-check-double"></i>
+                                                </a>
+                                            }
+
+
+
+
+
+
+
+                                            @*@if (!string.IsNullOrEmpty(CoID))
+                                                {
+                                                    <a class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#ConfirmCourierModal" data-itNo="@device.IT_No" data-hooneId="@CoID">
+                                                        <i class="fas fa-check-double"></i>
+                                                    </a>
+                                                }*@
+
+
+                                        </center>
+                                    </th>
+                                </tr>
+                            }
+                        </tbody>
+                    }
+                </table>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<br />
+<br />
+
+@*Table End *@
+
+
+@*Request for Permanent Handover to IT*@
+
+<div class="modal fade" id="HandoverModal" tabindex="-1" role="dialog" aria-labelledby="HandoverModalLabel" aria-hidden="true">
+    <form id="HandoverModalForm" action='/TechAssets/PHOModal' method="post">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-danger">
+                    <h5 class="modal-title" id="HandoverReModalLabel">
+                        <i class="fas fa-handshake"></i>&nbsp; Request for Permanent Handover to IT - <span id="itemLabel3"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <input type="text" class="form-control" id="handoverRLocation" name="location" value="@Model.TechUser.get_emp_division" style="display: none;" />
+                                <input type="text" id="itNo2" name="it" readonly style="display: none;" />
+                                <input type="text" id="empname" name="empname" value="@Model.TechUser.get_emp_name" readonly style="display: none;" />
+
+
+                                <div class="form-group">
+                                    <label for="employeeNo">Device User &nbsp;<span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control mb-3" id="employeeNo" placeholder="Enter Employee Number" required />
+                                    <div id="error-message" class="text-danger" style="display:none;"></div>
+                                    <input type="text" class="form-control" id="devicesIdPHO" name="employee" autocomplete="off" required readonly />
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="reason">Handover Remaks &nbsp;<span style="color: red;">*</span></label>
+                                    <textarea class="form-control" id="
+                                                  " name="THandoverRemaks" rows="5" required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="reason">Contact Details &nbsp;<span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" id="contact" name="contact" required />
+                                </div>
+
+                                <input type="text" id="itNo2" name="it" readonly style="display: none;" />
+                                <input type="text" id="empname" name="sysuser" value="@Model.TechUser.get_emp_name" readonly style="display: none;" />
+
+
+                            </div>
+                            <div class="col-md-6">
+
+
+                                <div class="card card-danger card-tabs">
+                                    <div class="card-header p-0 pt-1">
+                                        <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="custom-tabs-one-home-tab" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">English</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="custom-tabs-one-profile-tab" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">සිංහල</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tab-content" id="custom-tabs-one-tabContent">
+                                            <div class="tab-pane fade show active" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
+                                                <div class="list-group">
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start bg-danger text-white">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h5 class="mb-1"><strong>Step 1</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">Please fill out this form. This will help us address the issue quickly.</p>
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h5 class="mb-1"><strong>Step 2</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">Handover items must be approved by the Division Head before they are sent.</p>
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h5 class="mb-1"><strong>Step 3</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">After the repair has been approved, please update the sending details.</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                                                <div class="list-group">
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start bg-danger text-white">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h5 class="mb-1"><strong>පියවර 1</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">කරුණාකර මෙම ආකෘතිය පුරවන්න. අපට ගැටලුව වේගයෙන් විසඳා ගැනීමට එය උපකාරී වේ.</p>
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h5 class="mb-1"><strong>පියවර 2</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">අයිතමය තොරතුරු තාක්ෂණ අංශය වෙත එවීමට පෙර අංශ ප්‍රධානියා විසින් අනුමත කළ යුතුයි.</p>
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h5 class="mb-1"><strong>පියවර 3</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">අංශ ප්‍රධානියා විසින් අනුමත කල පසු, කරුණාකර අයිතම එවීම් පිළිබඳ විස්තර යාවත්කාලීන කරන්න.</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary" style="width: 200px;" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger" style="width: 300px;" id="submitHandoverBtn">Request for Permanent Handover</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@*Request for repair*@
+
+<div class="modal fade" id="RepairModal" tabindex="-1" role="dialog" aria-labelledby="RepairModalLabel" aria-hidden="true">
+    <form id="RepairModalForm" action='/TechAssets/RepairModal' method="post">
+
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-light">
+                    <h5 class="modal-title" id="RepairReModalLabel">
+                        <i class="fas fa-tools"></i>&nbsp; Request to Repair - <span id="itemLabel2"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="form-group d-none">
+                                    <input type="text" class="form-control " id="handoverRLocation" name="location" value="@Model.TechUser.get_emp_division" readonly />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="reason">Device User &nbsp;<span style="color: red;">*</span></label>
+
+                                    <input type="text" class="form-control mb-3" id="employeeNo1" placeholder="Enter Employee Number" required />
+                                    <div id="error-message1" class="text-danger" style="display:none;"></div>
+                                    <input type="text" class="form-control" id="devicesIdRepair" name="employee" autocomplete="off" required readonly />
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="reason">User Feedback on Fault &nbsp;<span style="color: red;">*</span></label>
+                                    <textarea class="form-control" id="feedback" name="feedback" rows="5" required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="reason">Contact Details &nbsp;<span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" id="contact" name="contact" required />
+                                </div>
+
+                                <input type="text" id="itNo2" name="it" readonly style="display: none;" />
+                                <input type="text" id="empname" name="sysuser" value="@Model.TechUser.get_emp_name" readonly style="display: none;" />
+
+
+                            </div>
+                            <div class="col-md-6">
+
+
+                                <div class="card card-primary card-tabs">
+                                    <div class="card-header p-0 pt-1">
+                                        <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="custom-tabs-one-home1-tab" data-toggle="pill" href="#custom-tabs-one-home1" role="tab" aria-controls="custom-tabs-one-home1" aria-selected="true">English</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="custom-tabs-one-profile1-tab" data-toggle="pill" href="#custom-tabs-one-profile1" role="tab" aria-controls="custom-tabs-one-profile1" aria-selected="false">සිංහල</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="tab-content" id="custom-tabs-one-tabContent">
+                                            <div class="tab-pane fade show active" id="custom-tabs-one-home1" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
+                                                <div class="list-group">
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h5 class="mb-1"><strong>Step 1</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">Please fill out this form. This will help us address the issue quickly.</p>
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h5 class="mb-1"><strong>Step 2</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">Handover items must be approved by the Division Head before they are sent.</p>
+
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h5 class="mb-1"><strong>Step 3</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">After the repair has been approved, please update the sending details.</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="custom-tabs-one-profile1" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                                                <div class="list-group">
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h5 class="mb-1"><strong>පියවර 1</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">කරුණාකර මෙම ආකෘතිය පුරවන්න. අපට ගැටලුව වේගයෙන් විසඳා ගැනීමට එය උපකාරී වේ.</p>
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h5 class="mb-1"><strong>පියවර 2</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">අයිතමය තොරතුරු තාක්ෂණ අංශය වෙත එවීමට පෙර අංශ ප්‍රධානියා විසින් අනුමත කළ යුතුයි.</p>
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h5 class="mb-1"><strong>පියවර 3</strong></h5>
+                                                        </div>
+                                                        <p class="mb-1">අංශ ප්‍රධානියා විසින් අනුමත කල පසු, කරුණාකර අයිතම එවීම් පිළිබඳ විස්තර යාවත්කාලීන කරන්න.</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" style="width: 200px;" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" style="width: 200px;" id="submitRepairBtn">Request to Repair</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@*Sent Device*@
+
+<div class="modal fade" id="SentModal" tabindex="-1" role="dialog" aria-labelledby="SentModalLabel" aria-hidden="true">
+    <form id="SentModalForm" action='/TechAssets/SentModal' method="post">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-light">
+                    <h5 class="modal-title" id="SentReModalLabel">
+                        <i class="fas fa-tools"></i>&nbsp; Sent to IT Division - <span id="itemLabel"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="handoverRLocation" name="location" value="@Model.TechUser.get_emp_division" style="display: none;" />
+                                <input type="text" id="itNo2" name="it" readonly style="display: none;" />
+                                <input type="text" id="empname" name="empname" value="@Model.TechUser.get_emp_name" readonly style="display: none;" />
+                                <input type="text" id="statusValueField" name="statusValueField" style="display: none;" />
+
+
+                                <div class="form-group">
+                                    <label for="sentType">Item Sent Type &nbsp;<span style="color: red;">*</span></label>
+                                    <select class="form-control" id="ItemSentType" name="ItemSentType" required>
+                                        <option value="">Select Type</option>
+                                        <option value="Sent By Hand">Sent By Hand</option>
+                                        <option value="Sent By Courier">Sent By Courier</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="ItemSentDate">Sent Date &nbsp;<span style="color: red;">*</span></label>
+                                    <input type="date" class="form-control" id="ItemSentDate" name="ItemSentDate" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="reason">Item Sent Remarks</label>
+                                    <textarea class="form-control" id="ItemSentRemaks" name="ItemSentRemaks" rows="5"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary" style="width: 200px;" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" style="width: 200px;">Send to IT Division</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@*Repair Request*@
+<script>
+    $(document).ready(function () {
+        $('#RepairModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var itNo = button.data('itno');
+            var empname = button.data('empname');
+            var modal = $(this);
+
+            modal.find('#itNo2').val(itNo);
+            modal.find('#itemLabel2').text(itNo);
+        });
+    });
+</script>
+
+@*Sent Device*@
+
+<script>
+    $(document).ready(function () {
+        $('#SentModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var itNo = button.data('itno');
+            var empname = button.data('empname');
+            var statusValue = button.data('status-value');
+            var modal = $(this);
+
+            modal.find('#itNo2').val(itNo);
+            modal.find('#itemLabel').text(itNo);
+            modal.find('#statusValueField').val(statusValue);
+        });
+
+        $('#SentModalForm').on('submit', function (event) {
+            event.preventDefault();
+
+            $('#modalMessage').hide().removeClass('alert-success alert-danger');
+
+            var formData = $(this).serialize();
+            $.ajax({
+                url: '/TechAssets/SentModal',
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        $('#SentModal').modal('hide');
+                        location.reload();
+                        $('#modalMessage').text(response.message).addClass('alert alert-success').show();
+                    } else {
+                        $('#modalMessage').text(response.message).addClass('alert alert-danger').show();
+                    }
+                },
+                error: function (xhr, status, error) {
+                    $('#modalMessage').text('Error: ' + error).addClass('alert alert-danger').show();
+                }
+            });
+        });
+    });
+</script>
+
+@*// Search Employee from emp no in RepairModal*@
+
+<script>
+    $(document).ready(function () {
+        $("#employeeNo1").on("keyup", function () {
+            var empId = $("#employeeNo1").val();
+            sendData = { empNo: empId };
+
+            $.ajax({
+                url: "/TechAssets/getEmpName",
+                method: "POST",
+                data: sendData,
+                success: function (data) {
+                    if (data.empName) {
+                        $("#devicesIdRepair").val(data.empName);
+                        $("#error-message1").hide();
+                    } else {
+                        $("#devicesIdRepair").val('');
+                        $("#error-message1").text('Invalid Employee Number').show();
+                    }
+                },
+                error: function () {
+                    $("#devicesIdRepair").val('');
+                    $("#error-message1").text('An error occurred. Please try again.').show();
+                }
+            });
+        });
+
+        $("form").on("submit", function (event) {
+            if ($("#devicesIdRepair").val() === '') {
+                event.preventDefault();
+                $("#error-message1").text('Please enter a valid Employee Number').show();
+            } else {
+                $("#error-message1").hide();
+            }
+        });
+    });
+</script>
+
+
+@*// Search Employee from emp no in PHOModal*@
+
+<script>
+    $(document).ready(function () {
+        $("#employeeNo").on("keyup", function () {
+            var empId = $("#employeeNo").val();
+            sendData = { empNo: empId };
+
+            $.ajax({
+                url: "/TechAssets/getEmpName",
+                method: "POST",
+                data: sendData,
+                success: function (data) {
+                    if (data.empName) {
+                        $("#devicesIdPHO").val(data.empName);
+                        $("#error-message").hide();
+                    } else {
+                        $("#devicesIdPHO").val('');
+                        $("#error-message").text('Invalid Employee Number').show();
+                        event.preventDefault();
+                    }
+                },
+                error: function () {
+                    $("#devicesIdPHO").val('');
+                    $("#error-message").text('An error occurred. Please try again.').show();
+                }
+            });
+        });
+
+
+        $("#HandoverModalForma").on("submit", function (event) {
+            if ($("#devicesIdPHO").val() === '') {
+                event.preventDefault();
+                $("#error-message").text('Please enter a valid Employee Number').show();
+            } else {
+                $("#error-message").hide();
+            }
+        });
+    });
+
+</script>
+
+
+@*// Handover Submit*@
+
+<script>
+    $(document).ready(function () {
+
+        $('#HandoverModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var itNo = button.data('itno');
+            var empname = button.data('empname');
+            var modal = $(this);
+
+
+            modal.find('#itNo2').val(itNo);
+            modal.find('#itemLabel3').text(itNo);
+            modal.find('#empname').val(empname);
+        });
+
+
+        $('#HandoverModalForm').on('submit', function (event) {
+            event.preventDefault();
+
+            $('#modalMessage').hide().removeClass('alert-success alert-danger');
+
+            var formData = $(this).serialize();
+            $.ajax({
+                url: '/TechAssets/PHOModal',
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        $('#HandoverModal').modal('hide');
+                        location.reload();
+                        $('#modalMessage').text(response.message).addClass('alert alert-success').show();
+                    } else {
+                        $('#modalMessage').text(response.message).addClass('alert alert-danger').show();
+                    }
+                },
+                error: function (xhr, status, error) {
+                    $('#modalMessage').text('Error: ' + error).addClass('alert alert-danger').show();
+                }
+            });
+        });
+    });
+</script>
+
+
+@*// Table *@
+
+<script>
+    $(function () {
+        $("#example1").DataTable({
+            "responsive": true, "lengthChange": false, "autoWidth": false,
+
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+    });
+</script>
+
+<script>
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+
+</script>
+
+
+
+@*NewChanges*@
+
+<!-- First Modal -->
+<div class="modal fade" id="ConfirmModal" tabindex="-1" role="dialog" aria-labelledby="ConfirmModalLabel" aria-hidden="true">
+    <form class="confirm-modal-form" method="post">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-light">
+                    <h5 class="modal-title">
+                        <i class="fas fa-tools"></i>&nbsp; Received confirmation on - <span class="itemLabel"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="hidden" class="itNo" name="itNo" />
+                                <input type="hidden" class="hooneId" name="hooneId" />
+                                <input type="hidden" name="empname" value="@Model.TechUser.get_emp_name" />
+                                <input type="hidden" class="modalType" name="modalType" value="ConfirmModal" />
+
+                                <div class="form-group">
+                                    <label for="ItemRecDate">Receive Date &nbsp;<span style="color: red;">*</span></label>
+                                    <input type="date" class="form-control" name="ItemRecDate" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="itemRecRemarks">Item Received Remarks</label>
+                                    <textarea class="form-control" name="itemRecRemarks" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary" style="width: 200px;" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success" style="width: 200px;">Received Confirm</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Second Modal -->
+<div class="modal fade" id="ConfirmTModal" tabindex="-1" role="dialog" aria-labelledby="ConfirmTModalLabel" aria-hidden="true">
+    <form class="confirm-modal-form" method="post">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-light">
+                    <h5 class="modal-title">
+                        <i class="fas fa-tools"></i>&nbsp; Received confirmation on - <span class="itemLabel"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="hidden" class="itNo" name="itNo" />
+                                <input type="hidden" class="hooneId" name="hooneId" />
+                                <input type="hidden" name="empname" value="@Model.TechUser.get_emp_name" />
+                                <input type="hidden" class="modalType" name="modalType" value="ConfirmTModal" />
+
+                                <div class="form-group">
+                                    <label for="ItemRecDate">Receive Date &nbsp;<span style="color: red;">*</span></label>
+                                    <input type="date" class="form-control" name="ItemRecDate" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="itemRecRemarks">Item Received Remarks</label>
+                                    <textarea class="form-control" name="itemRecRemarks" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary" style="width: 200px;" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success" style="width: 200px;">Received Confirm</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+<!-- C First Modal -->
+<div class="modal fade" id="ConfirmNewModal" tabindex="-1" role="dialog" aria-labelledby="ConfirmNewModalLabel" aria-hidden="true">
+    <form class="confirmC-form" method="post">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-light">
+                    <h5 class="modal-title">
+                        <i class="fas fa-tools"></i>&nbsp; Received confirmation on - NEW <span class="itemLabel"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="hidden" class="itNo" name="itNo" />
+                                <input type="hidden" class="hooneId" name="hooneId" />
+                                <input type="hidden" class="cooneId" name="cooneId" />
+                                <input type="hidden" name="empname" value="@Model.TechUser.get_emp_name" />
+                                <input type="hidden" class="modalType" name="modalType" value="ConfirmNewModal" />
+
+                                <div class="form-group">
+                                    <label for="ItemRecDate">Receive Date &nbsp;<span style="color: red;">*</span></label>
+                                    <input type="date" class="form-control" name="ItemRecDate" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="itemRecRemarks">Item Received Remarks</label>
+                                    <textarea class="form-control" name="itemRecRemarks" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary" style="width: 200px;" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success" style="width: 200px;">Received Confirm</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- C Second Modal -->
+<div class="modal fade" id="ConfirmReModal" tabindex="-1" role="dialog" aria-labelledby="ConfirmReModalLabel" aria-hidden="true">
+    <form class="confirmC-form" method="post">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-light">
+                    <h5 class="modal-title">
+                        <i class="fas fa-tools"></i>&nbsp; Received confirmation on - REP <span class="itemLabel"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="hidden" class="itNo" name="itNo" />
+                                <input type="hidden" class="hooneId" name="hooneId" />
+                                <input type="hidden" class="cooneId" name="cooneId" />
+                                <input type="hidden" name="empname" value="@Model.TechUser.get_emp_name" />
+                                <input type="hidden" class="modalType" name="modalType" value="ConfirmReModal" />
+
+                                <div class="form-group">
+                                    <label for="ItemRecDate">Receive Date &nbsp;<span style="color: red;">*</span></label>
+                                    <input type="date" class="form-control" name="ItemRecDate" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="itemRecRemarks">Item Received Remarks</label>
+                                    <textarea class="form-control" name="itemRecRemarks" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary" style="width: 200px;" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success" style="width: 200px;">Received Confirm</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $('.modal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var itNo = button.data('itno');
+            var hooneId = button.data('hooneid');
+            var modal = $(this);
+
+            modal.find('.itNo').val(itNo);
+            modal.find('.hooneId').val(hooneId);
+            modal.find('.itemLabel').text(itNo);
+
+            console.log("Modal Opened: ", modal.attr('id'), " itNo: ", itNo, " hooneId: ", hooneId);
+        });
+
+        $('.confirm-modal-form').on('submit', function (event) {
+            event.preventDefault();
+
+            var formData = $(this).serialize();
+            var actionUrl = '/TechAssets/ReceivedConNew'; // Ensure this is the correct URL
+            var modal = $(this).closest('.modal');
+
+            console.log("Form submitted. Data: ", formData);
+            console.log("Submitting to: ", actionUrl);
+
+            $.ajax({
+                url: actionUrl,
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    console.log("AJAX success response: ", response);
+                    if (response.success) {
+                        modal.modal('hide');
+                        location.reload();
+                        $('#modalMessage').text(response.message).addClass('alert alert-success').show();
+                    } else {
+                        $('#modalMessage').text(response.message).addClass('alert alert-danger').show();
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.log("AJAX error: ", error);
+                    console.log("XHR response: ", xhr.responseText);
+                    $('#modalMessage').text('Error: ' + error).addClass('alert alert-danger').show();
+                }
+            });
+        });
+    });
+</script>
+
+
+
+<script>
+    $(document).ready(function () {
+        $('.modal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var itNo = button.data('itno');
+            var hooneId = button.data('hooneid');
+            var cooneId = button.data('cooneid');
+            var modal = $(this);
+
+            modal.find('.itNo').val(itNo);
+            modal.find('.hooneId').val(hooneId);
+            modal.find('.cooneId').val(cooneId);
+            modal.find('.itemLabel').text(itNo);
+        });
+
+        $('.confirmC-form').on('submit', function (event) {
+            event.preventDefault();
+
+            var formData = $(this).serialize();
+            var actionUrl = '/TechAssets/ReceivedConCou'; // Ensure this is the correct URL
+            var modal = $(this).closest('.modal');
+
+            console.log("Form submitted. Data: ", formData);
+            console.log("Submitting to: ", actionUrl);
+
+            $.ajax({
+                url: actionUrl,
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    console.log("AJAX success response: ", response);
+                    if (response.success) {
+                        modal.modal('hide');
+                        location.reload();
+                        $('#modalMessage').text(response.message).addClass('alert alert-success').show();
+                    } else {
+                        $('#modalMessage').text(response.message).addClass('alert alert-danger').show();
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.log("AJAX error: ", error);
+                    console.log("XHR response: ", xhr.responseText);
+                    $('#modalMessage').text('Error: ' + error).addClass('alert alert-danger').show();
+                }
+            });
+        });
+    });
+</script>

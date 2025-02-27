@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@model TechAssets.Models.techassetsM
+
+
+<style>
+    body {
+        overflow: hidden; /* Prevent scrolling */
+        margin: 0; /* Remove any default margins */
+        font-family: Arial, sans-serif; /* Set a modern font */
+        background-color: #f8f9fa; /* Light background color */
+    }
+
+    .fixed-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Center the content */
+        flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    }
+
+    .card {
+        margin: 1rem; /* Adjust card margins */
+        border: 2px solid #007bff; /* Use a primary color for borders */
+        border-radius: 12px; /* Rounded corners for cards */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        transition: transform 0.3s; /* Smooth scaling effect */
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Scale effect on hover */
+    }
+
+    .card-body {
+        padding: 1.5rem; /* Increase padding */
+    }
+
+    .card-title {
+        font-weight: bold; /* Bold titles */
+        color: #343a40; /* Dark text color */
+    }
+
+    .btn {
+        border-radius: 50px; /* Rounded buttons */
+        padding: 0.75rem 1.5rem; /* Increased padding */
+        font-size: 1.1rem; /* Slightly larger font */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for button color */
+    }
+
+    .btn-primary {
+        background-color: #007bff; /* Primary button color */
+        color: white; /* Button text color */
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3; /* Darker on hover */
+        color: #fff; /* Ensure text is readable */
+    }
+
+    .btn-success {
+        background-color: #28a745; /* Success button color */
+        color: white; /* Button text color */
+    }
+
+    .btn-success:hover {
+        background-color: #218838; /* Darker on hover */
+        color: #fff; /* Ensure text is readable */
+    }
+
+    
+</style>
+
+
+<div class="fixed-container">
+    <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+            <a href="/TechAssets/Devices?status=1" class="btn btn-primary" role="button">Find Devices</a>
+        </div>
+    </div>
+
+    <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+            <a href="/TechAssets/RepairApproval" class="btn btn-success" role="button">Approve Repair Request</a>
+        </div>
+    </div>
+
+    <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+            <a href="/TechAssets/HandoverApproval" class="btn btn-success" role="button">Approve Permanently Handover</a>
+        </div>
+    </div>
+
+    <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+            <a href="/TechAssets/UserChange" class="btn btn-success" role="button">Authorized_Officer Change</a>
+        </div>
+    </div>
+
+</div>
