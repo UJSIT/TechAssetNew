@@ -7,7 +7,8 @@ namespace TechAssets.Models
 {
     public class users
     {
-        public static string userName = "wasana";
+        //public static string userName = "wasana";
+        public static string userName = "ugujs";
         public string login_ok { get; set; }
         public string emp_id { get; set; }
         public string user_domain { get; set; }
