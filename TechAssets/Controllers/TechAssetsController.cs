@@ -169,8 +169,58 @@ namespace TechAssets.Controllers
 
 
 
+        //[HttpPost]
+        //public ActionResult RepairModal(string it, string feedback, string location, string contact, string employee, string sysuser)
+        //{
+        //    string insertSql = "INSERT INTO [TechAssets].[dbo].[Hardware_THandover] ([THandoverStatus], [IT_No], [THandoverType], [THandoverLocation], [DeviceUser], [Userfeedback], [ContactDetails], [THRequestDate], [SysTHReqUser], [SysTHReqDate]) VALUES (@THandoverStatus, @IT_No, @THandoverType ,@THandoverLocation, @DeviceUser, @Userfeedback, @ContactDetails, @THRequestDate, @SysTHReqUser, @SysTHReqDate)";
+
+        //    string updateSql = "UPDATE [TechAssets].[dbo].[Hardware_Devices] SET Current_Status = 30 WHERE IT_No = @IT_No";
+
+        //    try
+        //    {
+        //        using (var conn_uat = new SqlConnection(ConfigurationManager.ConnectionStrings["connx"].ConnectionString))
+        //        {
+        //            conn_uat.Open();
+
+        //            using (SqlCommand insertCmd = new SqlCommand(insertSql, conn_uat))
+        //            {
+        //                insertCmd.Parameters.AddWithValue("@IT_No", it);
+        //                insertCmd.Parameters.AddWithValue("@THandoverLocation", location);
+        //                insertCmd.Parameters.AddWithValue("@DeviceUser", employee);
+        //                insertCmd.Parameters.AddWithValue("@Userfeedback", feedback);
+        //                insertCmd.Parameters.AddWithValue("@ContactDetails", contact);
+        //                insertCmd.Parameters.AddWithValue("@THRequestDate", DateTime.Now);
+        //                insertCmd.Parameters.AddWithValue("@SysTHReqUser", sysuser);
+        //                insertCmd.Parameters.AddWithValue("@SysTHReqDate", DateTime.Now);
+        //                insertCmd.Parameters.AddWithValue("@THandoverStatus", 30);
+        //                insertCmd.Parameters.AddWithValue("@THandoverType", 41);
+
+        //                insertCmd.ExecuteNonQuery();
+        //            }
+
+        //            using (SqlCommand updateCmd = new SqlCommand(updateSql, conn_uat))
+        //            {
+        //                updateCmd.Parameters.AddWithValue("@IT_No", it);
+
+        //                updateCmd.ExecuteNonQuery();
+        //            }
+        //        }
+
+        //        TempData["Message"] = "Repair Request Successfully submitted!";
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        TempData["ErrorMessage"] = "Error: " + ex.Message;
+        //    }
+        //    return RedirectToAction("Devices", "TechAssets", new { status = 30 });
+        //}
+
+
+        //==========================2025_05_09================================
+
         [HttpPost]
-        public ActionResult RepairModal(string it, string feedback, string location, string contact, string employee, string sysuser)
+        public JsonResult RepairModal(string it, string feedback, string location, string contact, string employee, string sysuser)
         {
             string insertSql = "INSERT INTO [TechAssets].[dbo].[Hardware_THandover] ([THandoverStatus], [IT_No], [THandoverType], [THandoverLocation], [DeviceUser], [Userfeedback], [ContactDetails], [THRequestDate], [SysTHReqUser], [SysTHReqDate]) VALUES (@THandoverStatus, @IT_No, @THandoverType ,@THandoverLocation, @DeviceUser, @Userfeedback, @ContactDetails, @THRequestDate, @SysTHReqUser, @SysTHReqDate)";
 
@@ -206,17 +256,14 @@ namespace TechAssets.Controllers
                     }
                 }
 
-                TempData["Message"] = "Repair Request Successfully submitted!";
+                return Json(new { success = true, message = "Repair request successfully submitted!" });
             }
             catch (Exception ex)
             {
-
-                TempData["ErrorMessage"] = "Error: " + ex.Message;
+                return Json(new { success = false, message = "Error: " + ex.Message });
             }
-            return RedirectToAction("Devices", "TechAssets", new { status = 30 });
         }
-
-
+        //==========================2025_05_09================================
 
         public ActionResult RepairApproval(string status = null)
         {
